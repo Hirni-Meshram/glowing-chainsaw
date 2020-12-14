@@ -4,7 +4,7 @@ cache: ccache
 # We require CMake 3.10 but on Travis ARM xenial is too old (3.5)
 dist: bionic
 group: edge
-virt: lxd
+#virt: lxd
 
 os:
   - linux
