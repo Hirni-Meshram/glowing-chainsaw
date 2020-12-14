@@ -3,6 +3,8 @@ cache: ccache
 
 # We require CMake 3.10 but on Travis ARM xenial is too old (3.5)
 dist: bionic
+group: edge
+virt: lxd
 
 os:
   - linux
@@ -10,6 +12,8 @@ osx_image: xcode11.3
 
 arch:
   - amd64
+  - arm64
+  - arm64-graviton2
 compiler:
   - clang
   - gcc
